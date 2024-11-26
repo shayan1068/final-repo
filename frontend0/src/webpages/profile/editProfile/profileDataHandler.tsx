@@ -3,7 +3,7 @@ export const fetchPostData = async (id: any) => {
   let config = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: `http://localhost:3000/api/edit/post/serviceId/${id}`,
+    url: `https://final-repo-k8c4.onrender.com/api/edit/post/serviceId/${id}`,
   };
   try {
     const response = await axios(config);
@@ -32,7 +32,7 @@ export const updateDataOfPost = async (
   const config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'http://localhost:3000/api/update/detail/post/serviceId/6460baf19847487955ad3ef1',
+    url: 'https://final-repo-k8c4.onrender.com/api/update/detail/post/serviceId/6460baf19847487955ad3ef1',
     headers: {
       'Content-Type': 'application/json'
     },
