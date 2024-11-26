@@ -1,7 +1,7 @@
 import axios from "axios";
 import io from "socket.io-client";
 import FormData from "form-data";
-const socket = io('http://localhost:3000');
+const socket = io('https://final-repo-k8c4.onrender.com');
 export const getTheuserIdsFromRequest = async (servicesId: string, userId: string, reqUserID: string, postId: string) => {
    let data = JSON.stringify({
       "servicesId": servicesId,
@@ -13,7 +13,7 @@ export const getTheuserIdsFromRequest = async (servicesId: string, userId: strin
    let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:3000/api/messanger/messanges',
+      url: 'https://final-repo-k8c4.onrender.com/api/messanger/messanges',
       headers: {
          'Content-Type': 'application/json'
       },
@@ -31,7 +31,7 @@ export const getTheuserIdsFromRequest = async (servicesId: string, userId: strin
 //    let config = {
 //       method: 'get',
 //       maxBodyLength: Infinity,
-//       url: `http://localhost:3000/api/messanger/eduId/${eduId}/user/${userId}/reqUser/${reqUserID}`,
+//       url: `https://final-repo-k8c4.onrender.com/api/messanger/eduId/${eduId}/user/${userId}/reqUser/${reqUserID}`,
 //       headers: {}
 //    };
 
@@ -46,7 +46,7 @@ export const getTheuserIdsFromRequest = async (servicesId: string, userId: strin
 //    let config = {
 //       method: 'get',
 //       maxBodyLength: Infinity,
-//       url: `http://localhost:3000/api/messanger/eduId/${medID}/user/${userId}/reqUser/${reqUserID}`,
+//       url: `https://final-repo-k8c4.onrender.com/api/messanger/eduId/${medID}/user/${userId}/reqUser/${reqUserID}`,
 //       headers: {}
 //    };
 
@@ -61,7 +61,7 @@ export const fetchDataFromRequestToGetIds = async () => {
    let config = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: 'http://localhost:3000/api/getIDs/messanger/data',
+      url: 'https://final-repo-k8c4.onrender.com/api/getIDs/messanger/data',
       headers: {}
    };
    try {
@@ -75,7 +75,7 @@ export const getTheDetailAboutTheUser = async (personId: string) => {
    let config = {
       method: 'get',
       maxBodyLength: Infinity,
-      url: `http://localhost:3000/api/messanger/getData/person/${personId}`,
+      url: `https://final-repo-k8c4.onrender.com/api/messanger/getData/person/${personId}`,
       headers: {}
    };
 
@@ -99,7 +99,7 @@ export const storeChatinMongoDB = async (sendId: string, messageText: string, me
    let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: `http://localhost:3000/api/chat/messangerSchemaId/${messangeID}`,
+      url: `https://final-repo-k8c4.onrender.com/api/chat/messangerSchemaId/${messangeID}`,
       headers: {
          'Content-Type': 'application/json'
       },
@@ -122,7 +122,7 @@ export const sendVoiceNoteToDb = async (personID:string,messageID:string,blob:Bl
    let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: `http://localhost:3000/api/chat/messangerSchemaId/voice/${messageID}/user/${personID}`,
+      url: `https://final-repo-k8c4.onrender.com/api/chat/messangerSchemaId/voice/${messageID}/user/${personID}`,
       data: data
    };
 
