@@ -19,7 +19,7 @@ export const exportDataFromRequest = async (userId: string, image: string,title:
   let config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: `http://localhost:3000/api//file/uploadfileEducation/${userId}`,
+    url: `https://final-repo-k8c4.onrender.com/api//file/uploadfileEducation/${userId}`,
 
     data: data
   };
@@ -35,7 +35,7 @@ export const fetchTheTotalEducationCollectionPost = async (userId: string) => {
   let config = {
     method: 'get',
     maxBodyLength: Infinity,
-    url: `http://localhost:3000/api/getAllPost/education/user/${userId}`,
+    url: `https://final-repo-k8c4.onrender.com/api/getAllPost/education/user/${userId}`,
     headers: {}
   };
 
@@ -61,7 +61,7 @@ export const getRequestForEducationHelp = async (userId:string,edId:string,newUs
   let config = {
     method: 'post',
     maxBodyLength: Infinity,
-    url: 'http://localhost:3000/api/post/requestbyuser/education',
+    url: 'https://final-repo-k8c4.onrender.com/api/post/requestbyuser/education',
     headers: {
       'Content-Type': 'application/json'
     },
