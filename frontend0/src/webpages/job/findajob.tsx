@@ -23,7 +23,7 @@ const Findajob = () => {
     const [getData, setData] = useState<any>();
     const fetchJob = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/job/fetch/${newUserId}`)
+            const response = await fetch(`https://final-repo-k8c4.onrender.com/api/job/fetch/${newUserId}`)
             const data = await response.json();
             setData(data);
         }
@@ -241,7 +241,7 @@ const Findajob = () => {
                             var config = {
                                 method: 'post',
                                 maxBodyLength: Infinity,
-                                url: `http://localhost:3000/api/jobRequest/send/${open.userId}/${open.jobId}/${newUserId}`,
+                                url: `https://final-repo-k8c4.onrender.com/api/jobRequest/send/${open.userId}/${open.jobId}/${newUserId}`,
                                 data: data
                             };
                             axios(config)
