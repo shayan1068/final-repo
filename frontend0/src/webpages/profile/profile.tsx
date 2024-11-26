@@ -15,12 +15,12 @@ function Profile() {
   const [getCount,setCount] = useState<any>(0);
   const userId = sessionStorage.getItem('user');
   const fetchUserInfo = async () => {
-    const response = await fetch(`http://localhost:3000/api/user/${userId}`);
+    const response = await fetch(`https://final-repo-k8c4.onrender.com/api/user/${userId}`);
     const data = await response.json();
     setData(data);
   }
   const fetchTotalPost = async () => {
-    const response = await fetch(`http://localhost:3000/api/post/${userId}`, {
+    const response = await fetch(`https://final-repo-k8c4.onrender.com/api/post/${userId}`, {
       method: 'GET',
     });
     const data = await response.json();
