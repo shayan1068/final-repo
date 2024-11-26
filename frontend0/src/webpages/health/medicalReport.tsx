@@ -74,7 +74,7 @@ function MedicalReport() {
                   var config = {
                     method: 'post',
                     maxBodyLength: Infinity,
-                    url: `http://localhost:3000/api/medical/upload/${userId}`,
+                    url: `https://final-repo-k8c4.onrender.com/api/medical/upload/${userId}`,
                     headers: {
                     },
                     data: data
