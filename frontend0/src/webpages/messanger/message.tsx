@@ -16,7 +16,7 @@ import { AiOutlineMenu, AiOutlineSend } from "react-icons/ai";
 import DefaultProfile from "./../../images/default.svg";
 import Play from './play';
 import { BsMic } from "react-icons/bs";
-const socket = io('http://localhost:3000');
+const socket = io('https://final-repo-k8c4.onrender.com');
 export default function App() {
     const fullName = sessionStorage.getItem('userName');
     const personID = sessionStorage.getItem('user');
