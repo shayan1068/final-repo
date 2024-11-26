@@ -143,7 +143,7 @@ const PageHeader = ({ links }: HeaderResponsiveProps) => {
   const token = sessionStorage.getItem("token");
   const userId = sessionStorage.getItem("user");
   const fetchUserInfo = async () => {
-    const response = await fetch(`http://localhost:3000/api/user/${userId}`);
+    const response = await fetch(`https://final-repo-k8c4.onrender.com/api/user/${userId}`);
     const data = await response.json();
     setData(data);
   }
