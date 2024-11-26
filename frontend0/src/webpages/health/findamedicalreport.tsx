@@ -15,7 +15,7 @@ function Findamedicalreport() {
     const [toggle, setToggle] = useState({ index: -1, toggle: false });
     const [open, setOpen] = useState({ medID: "", userId: "", status: false });
     const fetchMedicalReports = async () => {
-        const response = await fetch(`http://localhost:3000/api/medical/fetchAll/${newUserId}`);
+        const response = await fetch(`https://final-repo-k8c4.onrender.com/api/medical/fetchAll/${newUserId}`);
         const data = await response.json();
         setData(data);
     }
@@ -191,7 +191,7 @@ function Findamedicalreport() {
                             var config = {
                                 method: 'post',
                                 maxBodyLength: Infinity,
-                                url: 'http://localhost:3000/api/medicalRequest/upload',
+                                url: 'https://final-repo-k8c4.onrender.com/api/medicalRequest/upload',
                                 headers: {
                                     'Content-Type': 'application/json'
                                 },
