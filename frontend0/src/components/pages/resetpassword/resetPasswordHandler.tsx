@@ -9,7 +9,7 @@ export const getCheckTheUserName = async (userName: string) => {
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'http://localhost:3000/api/auth/resetPassword/userName',
+        url: 'https://final-repo-k8c4.onrender.com/api/auth/resetPassword/userName',
         headers: { 
           'Content-Type': 'application/json'
         },
@@ -34,7 +34,7 @@ export const checkTheBirthdayOfUser = async(userName: string,day:string ,month:s
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'http://localhost:3000/api/user/userBirthdaycheck/restpassword',
+        url: 'https://final-repo-k8c4.onrender.com/api/user/userBirthdaycheck/restpassword',
         headers: { 
           'Content-Type': 'application/json'
         },
@@ -57,7 +57,7 @@ export const changepasswordFinalPage = async(userName:string,password:string)=>{
       let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: 'http://localhost:3000/api//resetpassword/page/reset',
+        url: 'https://final-repo-k8c4.onrender.com/api//resetpassword/page/reset',
         headers: { 
           'Content-Type': 'application/json'
         },
