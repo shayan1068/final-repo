@@ -107,7 +107,7 @@ function Postajob() {
                   var config = {
                     method: 'post',
                     maxBodyLength: Infinity,
-                    url: `http://localhost:3000/api/job/upload/${userid}`,
+                    url: `https://final-repo-k8c4.onrender.com/api/job/upload/${userid}`,
                     data : data
                   };
                   await axios(config)
