@@ -30,7 +30,7 @@ function EditProfile() {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:3000/api/detele/profile/user/${userId}`,
+            url: `https://final-repo-k8c4.onrender.com/api/detele/profile/user/${userId}`,
         };
 
         axios.request(config)
@@ -46,7 +46,7 @@ function EditProfile() {
             });
     }
     const fetchUserInfo = async () => {
-        const response = await fetch(`http://localhost:3000/api/user/${userId}`);
+        const response = await fetch(`https://final-repo-k8c4.onrender.com/api/user/${userId}`);
         const data = await response.json();
         setData(data);
     }
@@ -156,7 +156,7 @@ function EditProfile() {
                                                 var config = {
                                                     method: 'post',
                                                     maxBodyLength: Infinity,
-                                                    url: `http://localhost:3000/api/updateDetail/${userId}`,
+                                                    url: `https://final-repo-k8c4.onrender.com/api/updateDetail/${userId}`,
                                                     data: data
                                                 };
 
@@ -243,7 +243,7 @@ function EditProfile() {
                                                     var config = {
                                                         method: 'post',
                                                         maxBodyLength: Infinity,
-                                                        url: `http://localhost:3000/api/updateDetail/${userId}`,
+                                                        url: `https://final-repo-k8c4.onrender.com/api/updateDetail/${userId}`,
                                                         data: data
                                                     };
                                                     axios(config)
