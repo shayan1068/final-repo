@@ -17,7 +17,7 @@ export const PostDataToDb = async (userId: any, itemType: String, size: string, 
     let config = {
         method: 'post',
         maxBodyLength: Infinity,
-        url: `http://localhost:3000/api/doation/donationItems/userId/${userId}`,
+        url: `https://final-repo-k8c4.onrender.com/api/doation/donationItems/userId/${userId}`,
         data: data
     };
 
@@ -33,7 +33,7 @@ export const getDeailsOfDonationPost = async (userId: any) => {
     let config = {
         method: 'get',
         maxBodyLength: Infinity,
-        url: `http://localhost:3000/api/donation/getDonationPost/${userId}`,
+        url: `https://final-repo-k8c4.onrender.com/api/donation/getDonationPost/${userId}`,
     };
 
     try {
@@ -58,7 +58,7 @@ export const getRequestForDonation = async (userId:string,doId:string,newUserId:
     let config = {
       method: 'post',
       maxBodyLength: Infinity,
-      url: 'http://localhost:3000/api/request/donation',
+      url: 'https://final-repo-k8c4.onrender.com/api/request/donation',
       headers: {
         'Content-Type': 'application/json'
       },
