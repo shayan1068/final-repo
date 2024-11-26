@@ -49,7 +49,7 @@ function registration() {
             var config = {
               method: 'post',
               maxBodyLength: Infinity,
-              url: 'http://localhost:3000/api/auth/signup',
+              url: 'https://final-repo-k8c4.onrender.com/api/auth/signup',
               data: data
             };
             await axios(config)
