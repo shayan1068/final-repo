@@ -20,7 +20,7 @@ function Request() {
     const [eduReport, setEduReport] = useState<any>();
     const [donaRepost, setdonaRepost] = useState<any>();
     async function deteleRequest(jobRequestId: any) {
-        const response = await fetch(`http://localhost:3000/api/delete/jobRequest/${jobRequestId}`, {
+        const response = await fetch(`https://final-repo-k8c4.onrender.com/api/delete/jobRequest/${jobRequestId}`, {
             "method": "DELETE",
             headers: {}
         });
@@ -36,7 +36,7 @@ function Request() {
         }
     }
     async function deteleMedRequest(medRequestId: any) {
-        const response = await fetch(`http://localhost:3000/api/delete/medRequest/${medRequestId}`, {
+        const response = await fetch(`https://final-repo-k8c4.onrender.com/api/delete/medRequest/${medRequestId}`, {
             "method": "DELETE",
             headers: {}
         });
@@ -56,7 +56,7 @@ function Request() {
             var config = {
                 method: 'post',
                 maxBodyLength: Infinity,
-                url: `http://localhost:3000/api/jobRequestToUser/${userID}`,
+                url: `https://final-repo-k8c4.onrender.com/api/jobRequestToUser/${userID}`,
                 headers: {}
             };
 
@@ -75,7 +75,7 @@ function Request() {
             var config = {
                 method: 'post',
                 maxBodyLength: Infinity,
-                url: `http://localhost:3000/api/medRequestTouser/${userID}`,
+                url: `https://final-repo-k8c4.onrender.com/api/medRequestTouser/${userID}`,
                 headers: {}
             };
 
